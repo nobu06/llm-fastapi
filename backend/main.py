@@ -14,7 +14,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/") #NT: is a declarator
+@app.get("/") #NT: is a declarator 
 def read_root():
     return {"Hello": "World"}
 
