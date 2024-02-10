@@ -26,7 +26,7 @@ def read_root():
 async def get_gemini_completion( #NT: can take int, float,
                             gemini_api_key: str =Form(...),
                             prompt: str = Form(...),  
-                            system: str = Form(...)
+                            #system: str = Form(...)
                         ):
     try:
         genai.configure(api_key = gemini_api_key)
